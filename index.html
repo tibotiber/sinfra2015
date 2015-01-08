@@ -550,42 +550,54 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading">Free Registration</h2>
+            <h3 class="section-subheading text-muted">Registration is free but mandatory for this event.</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form name="sentMessage" id="contactForm" novalidate>
+
+	    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	    
+            <form id="registrationForm" action="" method="POST" target="no-target" novalidate>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-md-offset-3">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                    <input type="text" class="form-control" placeholder="Full Name" id="reg-name" required data-validation-required-message="Please enter your full name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+		  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" id="reg-email" required data-validation-required-message="Please enter your email address.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                    <input type="text" class="form-control" placeholder="Affiliation" id="reg-affiliation" required data-validation-required-message="Please indicate your company, university or institute of attachment.">
                     <p class="help-block text-danger"></p>
                   </div>
-                  <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+		  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Country" id="reg-country" required data-validation-required-message="Please indicate your country of residence.">
                     <p class="help-block text-danger"></p>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
+		  <div class="form-group">
+		    <label for="reg-attend">Attendance:</label>
+		    <select class="form-control" id="reg-attend">
+		      <option>Full symposium</option>
+		      <option>Day 1 only</option>
+		      <option>Day 2 only</option>
+		    </select>
+		  </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button type="submit" class="btn btn-xl">Send Message</button>
+                  <button type="submit" class="btn btn-xl">Register!</button>
                 </div>
               </div>
             </form>
-          </div>
+
+	    <iframe src="#" id="no-target" name="no-target" style="display:none"></iframe>
+
+	  </div>
         </div>
       </div>
     </section>
@@ -801,10 +813,25 @@
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
+    <!-- Registration Form JavaScript -->
+    <script>
+      $('#registrationForm').one('submit',function(){
+      var baseURL = 'https://docs.google.com/forms/d/1qPkSdGaReGI-1bpWJuV4MiRMHwAAe-Uad0ArcdJ3dz0/formResponse?';
+      var name = 'entry.324355340='+encodeURIComponent($('#reg-name').val());
+      var email = '&entry.174612769='+encodeURIComponent($('#reg-email').val());
+      var affiliation = '&entry.968156759='+encodeURIComponent($('#reg-affiliation').val());
+      var country = '&entry.1450301084='+encodeURIComponent($('#reg-country').val());
+      var attend = '&entry.785263835='+encodeURIComponent($('#reg-attend').val());
+      var submitRef = '&submit=Submit';
+      var submitURL = (baseURL + name + email + affiliation + country + attend + submitRef);
+      console.log(submitURL);
+      $(this)[0].action=submitURL;
+      });
+    </script>
+
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-
+    
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 

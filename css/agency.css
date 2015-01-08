@@ -867,3 +867,11 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+.checkbox {
+    margin-top: 2px;
+}
+
+#label-checkbox {
+    padding-left: 12px;
+}
