@@ -65,6 +65,9 @@
               <a class="page-scroll" href="#program">Program</a>
             </li>
             <li>
+              <a href="#committeeModal" class="portfolio-link" data-toggle="modal">Committee</a>
+            </li>
+            <li>
               <a class="page-scroll" href="#partners">Partners</a>
             </li>
             <li>
@@ -83,7 +86,7 @@
         <div class="intro-text">
           <div class="intro-heading">3rd Singaporean-French Symposium</div>
           <div class="intro-lead-in"></div>
-          <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+          <a href="#registration" class="page-scroll btn btn-xl">Register Now</a>
         </div>
       </div>
     </header>
@@ -144,7 +147,7 @@
           <div class="col-sm-3">
             <div class="team-member">
               <a href="#">
-		<img src="img/team/david-rosenblum.jpg" class="img-responsive img-circle" alt="">
+		<img src="img/team/david-rosenblum.jpg" class="img-responsive img-circle img-keynotes" alt="">
 	      </a>
               <h4>David Rosenblum</h4>
               <p class="text-muted">Dean of the School of Computing, National University of Singapore</p>
@@ -152,21 +155,21 @@
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+              <img src="img/team/2.jpg" class="img-responsive img-circle img-keynotes" alt="">
               <h4>???</h4>
               <p class="text-muted">??, Nanyang Technological University, Singapore</p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img src="img/team/amelie-marian.jpg" class="img-responsive img-circle" alt="">
+              <img src="img/team/amelie-marian.jpg" class="img-responsive img-circle img-keynotes" alt="">
               <h4>Amélie Marian</h4>
               <p class="text-muted">Associate Professor, Rutgers University, New Jersey, USA</p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img src="img/team/philippe-andrey.jpg" class="img-responsive img-circle" alt="">
+              <img src="img/team/philippe-andrey.jpg" class="img-responsive img-circle img-keynotes" alt="">
               <h4>Philippe Andrey</h4>
               <p class="text-muted">Associate Professor, University Pierre and Marie Curie, Paris, France</p>
             </div>
@@ -518,32 +521,47 @@
     </section>
 
     <!-- Partners Section -->
-    <aside class="partners">
+    <section id="partners" class="bg-light-gray">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+	  <div class="col-lg-12 text-center">
+            <h2 class="section-heading" style="margin-bottom:45px">Supporting Partners</h2>
+          </div>
+	</div>
+	<div>
+          <div class="col-md-1 col-sm-6">
+            <a href="http://www.cnrs.fr/index.php" target="_blank">
+              <img src="img/logos/cnrs.png" class="img-responsive img-centered logoline" alt="">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="http://www.i2r.a-star.edu.sg/" target="_blank">
+              <img src="img/logos/i2r.png" class="img-responsive img-centered logoline" alt="">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="http://www.nus.edu.sg" target="_blank">
+              <img src="img/logos/nus.png" class="img-responsive img-centered logoline" alt="">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="https://www.ujf-grenoble.fr/?language=en" target="_blank">
+              <img src="img/logos/ujf.png" class="img-responsive img-centered logoline" alt="">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+            <a href="http://www.mines-telecom.fr/en/" target="_blank">
+              <img src="img/logos/imt.png" class="img-responsive img-centered logoline" alt="">
             </a>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+          <div class="col-md-2 col-sm-6">
+            <a href="http://www.upmc.fr/en/index.html" target="_blank">
+              <img src="img/logos/upmc.png" class="img-responsive img-centered logoline" alt="">
             </a>
           </div>
         </div>
       </div>
-    </aside>
+    </section>
 
     <!-- Registration Section -->
     <section id="registration">
@@ -590,7 +608,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button type="submit" class="btn btn-xl">Register!</button>
+                  <button type="submit" class="btn btn-xl">Register</button>
                 </div>
               </div>
             </form>
@@ -599,6 +617,9 @@
 
 	  </div>
         </div>
+	<div class="row">
+	  <h3 class="section-subheading text-center text-muted">For further enquiries, email us at <a href="mailto:contact@ipal.cnrs.fr?subject=[SinFra] Enquiry">contact@ipal.cnrs.fr</a>.</h3>
+	</div>
       </div>
     </section>
 
@@ -607,7 +628,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2014</span>
+            <span class="copyright">Copyright &copy; IPAL 2015</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -621,8 +642,6 @@
           </div>
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
-              <li><a href="#">Privacy Policy</a>
-              </li>
               <li><a href="https://www.flickr.com/photos/qin1109/14540524315" target="_blank">Header photo by Mac Qin</a>
               </li>
             </ul>
@@ -635,8 +654,8 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
     <!-- Note by Thibaut: this could be used on the program to display details -->
     
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Committee Modal -->
+    <div class="portfolio-modal modal fade" id="committeeModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
@@ -649,7 +668,7 @@
             <div class="col-lg-8 col-lg-offset-2">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2>Project Name</h2>
+                <h2>Committee Members</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
