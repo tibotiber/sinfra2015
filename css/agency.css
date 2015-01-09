@@ -437,6 +437,7 @@ section h3.section-subheading {
     position: relative;
     padding: 0;
     list-style: none;
+    margin-top: 50px;
 }
 
 .timeline:before {
@@ -657,69 +658,41 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
+section#registration {
     background-color: #222;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+section#registration .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
+section#registration .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
-}
-
-section#contact .form-group input.form-control {
+section#registration .form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
+section#registration .form-group textarea.form-control {
     height: 236px;
 }
 
-section#contact .form-control:focus {
+section#registration .form-control:focus {
     border-color: #fed136;
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact .text-danger {
+section#registration .text-danger {
     color: #e74c3c;
+}
+
+section#registration label {
+    color: white;
+    font-weight: 300;
 }
 
 footer {
@@ -887,4 +860,8 @@ body {
 .img-keynotes {
     height: 225px;
     weight: 225px;
+}
+
+.form-control {
+    color: #999;
 }
