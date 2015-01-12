@@ -857,6 +857,11 @@ body {
     height: 60px;
 }
 
+.logo-orga {
+    height: 100px;
+    margin-bottom: 50px;
+}
+
 .img-keynotes {
     height: 225px;
     weight: 225px;
