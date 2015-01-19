@@ -1267,7 +1267,7 @@
     
     <!-- Fix for Gmap iframe in accordion -->
     <script>
-    $('#collapseTwo').on('show.bs.collapse', function () {
+    $('.collapse').on('show.bs.collapse', function () {
 	$('iframe').each(function() {
             $(this).get(0).src = $(this).attr('src');
         });
