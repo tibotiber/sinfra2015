@@ -1266,11 +1266,13 @@
     </script>
     
     <!-- Fix for Gmap iframe in accordion -->
+    <script>
     $('#collapseTwo').on('show.bs.collapse', function () {
 	$('iframe').each(function() {
             $(this).get(0).src = $(this).attr('src');
         });
-    })
+    });
+    </script>
 
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
